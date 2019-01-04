@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Container*/
+
+.container {
+    margin: auto;
+    background: #ecf0f1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Presentacion*/
+
+.presentacion {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.presentacion>* {
+    flex: 1 100%;
+}
+
+.presentacion>div,
+.start {
+    margin: 30px;
+}
+
+
+/*Icono*/
+
+.presentacion .icono {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentacion .icono img {
+    width: 100%;
+    max-width: 300px;
+}
+
+
+/*Contenido*/
+
+.presentacion .contenido {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.presentacion .contenido>* {
+    margin-bottom: 10px;
+}
+
+
+/*Botones Contenido*/
+
+.presentacion .contenido .bt-presentacion {
+    display: flex;
+}
+
+.presentacion .contenido .bt-presentacion>* {
+    flex: 1 1 auto;
+}
+
+.presentacion .contenido .bt-presentacion a:first-child {
+    margin-right: .5em;
+}
+
+
+/* start */
+
+.start {
+    display: flex;
+    justify-content: center;
+}
+
+.start .form-control {
+    width: 250px;
+    margin-right: .5em;
+    height: 50px;
+}
+
+.start .bt {
+    width: 250px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 940px) {
+    .presentacion .contenido {
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .presentacion {
+        flex-flow: column wrap;
+    }
+    .presentacion>div,
+    .start {
+        margin: 25px;
+    }
+    .presentacion .icono {
+        margin-bottom: 10px;
+    }
+    .presentacion .icono img {
+        width: 100%;
+        max-width: 150px;
+    }
+    .presentacion .contenido h1 {
+        text-align: center;
+    }
+    .start {
+        flex-flow: column;
+    }
+    .start-m {
+        margin-top: 0px;
+    }
+    .start>* {
+        margin-bottom: .5em;
+    }
+}

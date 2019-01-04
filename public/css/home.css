@@ -1,0 +1,37 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    max-width: 960;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    padding: 1em;
+    border-radius: 15px;
+    min-height: 480px;
+    display: flex;
+    flex-flow: column;
+}
+
+.content>* {
+    flex: 1 100%;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content .botones {
+    padding: 1em 0;
+}
+
+.content .escritorio {
+    min-height: 250px;
+    padding: 1em 0;
+}

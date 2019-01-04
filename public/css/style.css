@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F39C12;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ticket-actual {
+    background-color: #2C3E50;
+}
+
+.ticket-actual-numero {
+    font-size: 7rem;
+}
+
+.ticket-actual-escritorio {
+    font-size: 3rem;
+}
+
+.ticket-secundario {
+    font-size: 3rem;
+}
+
+
+/* Nuevo-ticket */
+
+#lblNuevoTicket {
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 940px) {
+    .ticket-actual-numero {
+        font-size: 5rem;
+    }
+    .ticket-actual-escritorio {
+        font-size: 2.5rem;
+    }
+    .ticket-secundario {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .ticket-actual-numero {
+        font-size: 4rem;
+    }
+    .ticket-actual-escritorio {
+        font-size: 2rem;
+    }
+    .ticket-secundario {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ticket-actual-numero {
+        font-size: 2.5rem;
+    }
+    .ticket-actual-escritorio {
+        font-size: 1rem;
+    }
+    .ticket-secundario {
+        font-size: 1.5rem;
+    }
+}
